@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #demo {
+      width: 700px;
+      height: 700px;
+      background: #FF6666;
+      mask-image: url("https://i.loli.net/2020/07/28/eqAlhnPma8yRx9p.png");
+      -webkit-mask-image: url("https://i.loli.net/2020/07/28/eqAlhnPma8yRx9p.png");
+      /* 只能用网络上的图片 不知道为什么用file协议本地文件报错 */
+    }
+
+    p {
+      font-kerning: normal;
+      /* 间距 */
+      -webkit-font-smoothing: antialiased;
+      /* none ------ 对低像素的文本比较好 
+      subpixel-antialiased ------默认值 
+      antialiased ------抗锯齿很好 */
+      -moz-osx-font-smoothing: grayscale;
+      /* inherit | grayscale   grayscale相当于webkit的antialiased */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="demo">
+  </div>
+  <p>~抗锯齿和间距~</p>
+</body>
+
+</html>

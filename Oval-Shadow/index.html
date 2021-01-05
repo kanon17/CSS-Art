@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #demo {
+      width: 18px;
+      height: 22px;
+      color: #1da1f2;
+      font-weight: 700;
+      font-size: 32px;
+      position: relative;
+      margin: 50px;
+      border-radius: 3px 3px 0 0;
+      transform: translateX(-50%);
+    }
+
+    #demo::before {
+      content: '';
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      display: block;
+      width: 66px;
+      height: 18px;
+      background-color: #85dfe6;
+      border-radius: 66px / 25px;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="demo">1</div>
+</body>
+
+</html>

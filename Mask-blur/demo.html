@@ -1,0 +1,45 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-11-19 00:47:42
+ * @LastEditTime: 2021-01-05 21:17:54
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \undefinedd:\library\dev\Css-Art\父元素高斯模糊底层元素\demo.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #demo {
+      width: 100%;
+      height: 300px;
+      background-color: rgba(255, 255, 255, 0.3);
+      position: fixed;
+      /* saturate 饱和度 blur 模糊度 */
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(20px);
+    }
+
+    p {
+      font-size: 64px;
+      font-weight: 700;
+      margin-left: 30px;
+      line-height: 150px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="demo">
+    <p>I'm Chilren</p>
+  </div>
+  <img src="mask.png" alt="">
+  <img src="mask.png" alt="">
+  <img src="mask.png" alt="">
+</body>
+
+</html>

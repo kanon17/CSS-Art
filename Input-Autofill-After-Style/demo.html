@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文本框历史记录填充后样式</title>
+  <style>
+    input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 1000px #1da1f2;
+      /* background优先级太高，只能使用box-shadow当作替代方案使用。 */
+    }
+  </style>
+</head>
+
+<body>
+  <input type="text" />
+</body>
+
+</html>

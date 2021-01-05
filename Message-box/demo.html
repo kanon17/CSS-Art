@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #demo {
+      max-width: 240px;
+      padding: 0 10px;
+      height: 40px;
+      background-color: #1DA1F2;
+      position: relative;
+      color: #FFF;
+      font-weight: 700;
+      text-align: center;
+      line-height: 40px;
+    }
+
+    #demo::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      left: 0;
+      border-width: 5px 11px 0 0;
+      border-color: #1DA1F2 transparent transparent transparent;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="demo">
+    <p>Message Title</p>
+  </div>
+</body>
+
+</html>

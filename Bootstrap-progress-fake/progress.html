@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>仿bootstrap动态进度条</title>
+  <style>
+    div {
+      width: 800px;
+      height: 10px;
+      /*背景色*/
+      background-color: #3C3C3C;
+      /*自定义渐变重复效果*/
+      background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+      /*设置大小*/
+      background-size: 10px 10px;
+      animation: a 2s linear infinite;
+    }
+
+    /*动画*/
+    @keyframes a {
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: 40px 0;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+
+</body>
+
+</html>
